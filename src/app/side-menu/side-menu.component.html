@@ -1,0 +1,13 @@
+<ul class='line-list {{selectedLine.id}}'>
+  <li
+  *ngFor='let line of lines'
+  class="line-select {{line.id}}"
+  (mouseover)="hoverOn(line.id)"
+  (mouseleave)="hoverOff()"
+  routerLink="/line/{{line.id}}"
+  routerLinkActive="active"
+  (click)="onSelectLine(line)"
+>
+    <span>{{line.name}}</span>
+  </li>
+</ul>

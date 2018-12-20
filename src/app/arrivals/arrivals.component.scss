@@ -1,0 +1,21 @@
+@import '../../color-vars';
+.arrivals-board {
+  h2 {
+    font-size: 1.5em;
+    text-transform:uppercase;
+    font-variant: small-caps;
+    margin-bottom: 0.5em;
+    margin-top: 4rem;
+    font-weight: bold;
+  }
+
+  .arrival {
+    margin-bottom: 1em;
+  }
+
+  @each $key, $val in $line-colors {
+    .#{$key} {
+      color: $val;
+    }
+  }
+}

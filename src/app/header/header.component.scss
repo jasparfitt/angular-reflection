@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+img {
+  height: 5rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}

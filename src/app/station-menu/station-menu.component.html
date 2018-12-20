@@ -1,0 +1,11 @@
+<ul class='station-list'>
+  <li
+    class="station-select {{line.id}}"
+    *ngFor='let station of stations'
+    routerLink='/line/{{line.id}}/station/{{station.id}}'
+    (click)='onSelectStation(station)'
+    [ngClass]='{selected: station === selectedStation}'
+  >
+    {{station.commonName.substr(0, station.commonName.length-20)}}
+  </li>
+</ul>

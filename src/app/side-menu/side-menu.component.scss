@@ -1,0 +1,35 @@
+@import '../../color-vars';
+
+.line-list {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  position: sticky;
+  top: 100px;
+
+  li:last-of-type {
+    flex:auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .line-select{
+    cursor: pointer;
+    flex:auto;
+    color: white;
+    padding: 0.5em 1em;
+    margin-bottom: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    box-shadow: -5px 0px 20px 0px black;
+  }
+}
+
+@each $key, $val in $line-colors {
+  .#{$key} {
+    background-color: $val;
+  }
+}

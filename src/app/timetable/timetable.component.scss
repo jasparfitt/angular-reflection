@@ -1,0 +1,94 @@
+@import '../../color-vars';
+
+.timetables-container {
+  display: flex;
+  width: 100%;
+  background: white;
+  margin-top: 2rem;
+
+  @each $key, $val in $light-colors {
+    .#{$key} {
+      background-color: lighten($val, 20%);
+    }
+  }
+
+  @each $key, $val in $dark-colors {
+    .#{$key} {
+      background-color: lighten($val, 50%);
+    }
+  }
+
+  .timetables {
+    flex: auto;
+
+
+    h3 {
+      position: sticky;
+      top: 99px;
+      background: white;
+      height:20px;
+      font-size: 20px;
+      padding: 15px;
+      z-index: 5;
+    }
+
+    @each $key, $val in $line-colors {
+      .#{$key} {
+        color: $val;
+      }
+    }
+
+    .no-border {
+      div.timetable:first-of-type {
+        border-left: none;
+      }
+    }
+
+    .timetable-container {
+      display: flex;
+
+      .timetable:first-of-type {
+        border-left: black 2px solid;
+      }
+      @each $key, $val in $light-colors {
+        .#{$key} {
+          background-color: lighten($val, 20%);
+        }
+      }
+
+      .timetable {
+        flex: 100px;
+        text-align: center;
+        color: black;
+
+        .schedule-name {
+          position: sticky;
+          top: 148px;
+          height: 3.5em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background: white;
+        }
+
+        .time {
+          background: white;
+          color: black;
+          border: none;
+        }
+
+        @each $key, $val in $light-colors {
+          .#{$key}:nth-of-type(2n) {
+            background-color: lighten($val, 20%);
+          }
+        }
+
+        @each $key, $val in $dark-colors {
+          .#{$key}:nth-of-type(2n) {
+            background-color: lighten($val, 50%);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<div *ngIf='timetable' class='timetables-container'>
+  <div *ngIf='timetable[0].timetable.routes.length' class='timetables {{line.id}} {{timetable[0].direction}}'>
+    <h3 class={{line.id}}>{{timetable[0].lineName}} Line, {{station.commonName}} ({{timetable[0].direction}}) </h3>
+    <div class='timetable-container no-border'>
+      <div *ngFor='let schedule of timetable[0].timetable.routes[0].schedules' class='timetable {{line.id}}'>
+        <div class='schedule-name'>
+          <h4>{{schedule.name}}</h4>
+        </div>
+        <div *ngFor='let stop of schedule.knownJourneys' class="time {{line.id}}">
+          <span><span *ngIf='stop.hour != 24'>{{stop.hour}}</span><span *ngIf='stop.hour == 24'>00</span>:<span *ngIf='stop.minute<10'>0</span>{{stop.minute}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf='timetable[1].timetable.routes.length'class='timetables {{line.id}} {{timetable[1].direction}}'>
+    <h3 class={{line.id}}>{{timetable[1].lineName}} Line, {{station.commonName}} ({{timetable[1].direction}}) </h3>
+    <div class='timetable-container' [ngClass]="{'no-border': !timetable[0].timetable.routes.length}">
+      <div *ngFor='let schedule of timetable[1].timetable.routes[0].schedules' class='timetable {{line.id}}'>
+        <div class='schedule-name'>
+          <h4>{{schedule.name}}</h4>
+        </div>
+        <div *ngFor='let stop of schedule.knownJourneys' class='time {{line.id}}'>
+          <span><span *ngIf='stop.hour != 24'>{{stop.hour}}</span><span *ngIf='stop.hour == 24'>00</span>:<span *ngIf='stop.minute<10'>0</span>{{stop.minute}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

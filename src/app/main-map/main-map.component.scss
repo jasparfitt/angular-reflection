@@ -1,0 +1,22 @@
+@import '../../color-vars';
+
+svg {
+  width: 100%;
+  max-height: 90vh;
+}
+
+.hovering {
+  filter: url(#dropshadow);
+}
+
+@each $key, $val in $line-colors {
+  svg.#{$key} {
+    .hide {
+      display: none;
+    }
+
+    .#{$key} {
+      display: unset;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<h2 class={{line.id}}>{{line.name}} Line</h2>
+<div *ngIf='disruptions && disruptions.length'>
+  <div class='{{line.id}} disruption-box'>
+      <div class='disruption-title'>Warning the following disruptions are in effect on this line:</div>
+      <div class='disruption-text' *ngFor='let disruption of disruptions'>
+        {{disruption.description}}
+      </div>
+  </div>
+</div>
+<div class='mini-map'>
+  <app-main-map [hoverClass]="'off'" [line]='line' (selectStation)='onSelectStation($event)'></app-main-map>
+</div>

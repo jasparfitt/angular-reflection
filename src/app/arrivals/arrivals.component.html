@@ -1,0 +1,11 @@
+<div class='arrivals-board'>
+  <h2 class={{line.id}}>next train</h2>
+  <div *ngIf='!arrivals.length'>
+    Data not available for this station
+  </div>
+  <div class='arrival' *ngFor='let arrival of arrivals'>
+    Towards: {{arrival.towards}} <br />
+    {{arrival.platformName.substr(12, 100)}} <br />
+    Expected: {{arrival.expectedArrival.substr(0,5)}} ({{(arrival.timeToStation)}} mins)
+  </div>
+</div>

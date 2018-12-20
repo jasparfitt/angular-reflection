@@ -1,0 +1,43 @@
+// ~~~~~~ color variables ~~~~~~~
+$bakerloo: #894E24;
+$central: #DC241F;
+$circle: #FFCE00;
+$district: #007229;
+$hammersmith: #D799AF;
+$jubilee: #868F98;
+$metropolitan: #751056;
+$northern: #000;
+$piccadilly: #0019A8;
+$victoria: #00A0E2;
+$waterloo: #76D0BD;
+
+$line-colors: (
+  bakerloo: $bakerloo,
+  central: $central,
+  circle: $circle,
+  district: $district,
+  hammersmith-city: $hammersmith,
+  jubilee: $jubilee,
+  metropolitan: $metropolitan,
+  northern: $northern,
+  piccadilly: $piccadilly,
+  victoria: $victoria,
+  waterloo-city: $waterloo
+);
+
+$dark-colors: (
+  metropolitan: $metropolitan,
+  northern: $northern,
+  piccadilly: $piccadilly,
+  district: $district,
+  victoria: $victoria
+);
+
+$light-colors: (
+  bakerloo: $bakerloo,
+  central: $central,
+  circle: $circle,
+  hammersmith-city: $hammersmith,
+  jubilee: $jubilee,
+  waterloo-city: $waterloo
+)

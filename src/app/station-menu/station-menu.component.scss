@@ -1,0 +1,49 @@
+@import '../../color-vars';
+
+.station-list {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  position: sticky;
+  top: 100px;
+  overflow-y: scroll;
+
+  li:last-of-type {
+    flex:auto;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+  }
+
+  .station-select{
+    cursor: pointer;
+    color: white;
+    padding: 0.5em 1em;
+    padding-bottom: 2em;
+    margin-bottom: -10px;
+    border-top-right-radius: 10px;
+    box-shadow: -5px -5px 20px 0px rgba(0,0,0,0.3);
+  }
+
+  .northern {
+    box-shadow: inset -5px 5px 20px 0px rgba(255,255,255,0.3);
+  }
+}
+
+@each $key, $val in $line-colors {
+  .#{$key} {
+    background-color: $val;
+  }
+}
+
+@each $key, $val in $light-colors {
+  .#{$key}.selected {
+    background: darken($val, 10%)
+  }
+}
+
+@each $key, $val in $dark-colors {
+  .#{$key}.selected {
+    background: lighten($val, 10%)
+  }
+}
