@@ -9,6 +9,14 @@ svg {
   filter: url(#dropshadow);
 }
 
+.all-hide {
+  display: none;
+}
+
+.hoveringSt {
+  display: unset
+}
+
 @each $key, $val in $line-colors {
   svg.#{$key} {
     .hide {

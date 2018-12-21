@@ -7,24 +7,33 @@
   height: calc(100vh - 100px);
   position: sticky;
   top: 100px;
+  z-index: 5;
 
   li:last-of-type {
     flex:auto;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding-bottom: 5px;
+    margin-bottom: -5px;
   }
 
   .line-select{
+    overflow: hidden;
     cursor: pointer;
     flex:auto;
     color: white;
     padding: 0.5em 1em;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-top-right-radius: 10px;
     box-shadow: -5px 0px 20px 0px black;
+    transition: transform .5s;
+    z-index: 5;
+  }
+
+  .line-select:hover {
+    transform: translate(0, -5px);
+    z-index: 5;
   }
 }
 

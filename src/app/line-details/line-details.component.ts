@@ -11,6 +11,7 @@ import { Line } from '../line'
 export class LineDetailsComponent implements OnInit {
   @Input() line: Line;
   @Input() disruptions: any;
+  @Input() hoverStation: any;
   @Output() selectStation = new EventEmitter<any>();
 
   constructor() { }

@@ -7,12 +7,15 @@
   height: calc(100vh - 100px);
   position: sticky;
   top: 100px;
+  z-index: 5;
   overflow-y: scroll;
+
 
   li:last-of-type {
     flex:auto;
-    padding-bottom: 1em;
-    margin-bottom: 0;
+    padding-bottom: -5px;
+    margin-bottom: -5px;
+    overflow: hidden;
   }
 
   .station-select{
@@ -20,9 +23,16 @@
     color: white;
     padding: 0.5em 1em;
     padding-bottom: 2em;
-    margin-bottom: -10px;
+    margin-bottom: -15px;
     border-top-right-radius: 10px;
     box-shadow: -5px -5px 20px 0px rgba(0,0,0,0.3);
+    z-index: 5;
+    transition: transform 0.5s;
+  }
+
+  .station-select:hover {
+    transform: translate(0, -5px);
+    z-index: 5;
   }
 
   .northern {

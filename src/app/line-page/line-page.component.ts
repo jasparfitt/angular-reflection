@@ -14,6 +14,7 @@ export class LinePageComponent implements OnInit {
   selectedLine: any;
   disruptions: any;
   stations: any;
+  hoverStation: any;
   constructor(
     private route: ActivatedRoute,
     private lineService: LineService,
@@ -25,6 +26,10 @@ export class LinePageComponent implements OnInit {
     this.getLine(line);
     this.getDisruptions(line);
     this.getStations(line);
+  }
+
+  onHover(station) {
+    this.hoverStation = station.substr(0, station.length-20);
   }
 
   onSelectLine(line: any) {

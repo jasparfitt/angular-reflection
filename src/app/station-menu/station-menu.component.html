@@ -5,7 +5,9 @@
     routerLink='/line/{{line.id}}/station/{{station.id}}'
     (click)='onSelectStation(station)'
     [ngClass]='{selected: station === selectedStation}'
+    (mouseover)='hoverOn(station.commonName)'
+    (mouseleave)="hoverOff()"
   >
-    {{station.commonName.substr(0, station.commonName.length-20)}}
+    <div>{{station.commonName.substr(0, station.commonName.length-20)}}</div>
   </li>
 </ul>

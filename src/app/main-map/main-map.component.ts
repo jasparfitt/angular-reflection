@@ -8,6 +8,7 @@ export class MainMapComponent implements OnInit{
   @Input() hoverClass: String;
   @Input() line: any;
   @Output() selectStation = new EventEmitter<any>();
+  @Input() hoverStation: any;
   constructor() { }
 
   ngOnInit () {}
@@ -21,6 +22,18 @@ export class MainMapComponent implements OnInit{
   hoverOff ()  {
     if (this.hoverClass !== 'off') {
       this.hoverClass = '';
+    }
+  }
+
+  hoverStationOn (station: String) {
+    if (this.hoverStation !== 'off') {
+      this.hoverStation = station;
+    }
+  }
+
+  hoverStationOff ()  {
+    if (this.hoverStation !== 'off') {
+      this.hoverStation = '';
     }
   }
 

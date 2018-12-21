@@ -1,4 +1,4 @@
-<div class='arrivals-board'>
+<div *ngIf='arrivals' class='arrivals-board'>
   <h2 class={{line.id}}>next train</h2>
   <div *ngIf='!arrivals.length'>
     Data not available for this station

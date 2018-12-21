@@ -1,5 +1,5 @@
 <div class='line-page two-menu-page page'>
-  <app-line-details (selectStation)='onSelectStation($event)' [line]="selectedLine" [disruptions]="disruptions" class='main'></app-line-details>
-  <app-station-menu [stations]='stations' (selectStation)='onSelectStation($event)' [line]='selectedLine' class='side-l'></app-station-menu>
+  <app-line-details (selectStation)='onSelectStation($event)' [hoverStation]='hoverStation' [line]="selectedLine" [disruptions]="disruptions" class='main'></app-line-details>
+  <app-station-menu [stations]='stations' (hoveringStation)='onHover($event)' (selectStation)='onSelectStation($event)' [line]='selectedLine' class='side-l'></app-station-menu>
   <app-side-menu (selectLine)='onSelectLine($event)' [selectedLine]='selectedLine' class='side-r'></app-side-menu>
 </div>

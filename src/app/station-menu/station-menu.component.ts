@@ -9,6 +9,7 @@ export class StationMenuComponent implements OnInit {
   @Input() stations: any;
   @Input() line: any;
   @Input() selectedStation: any;
+  @Output() hoveringStation = new EventEmitter<string>();
   @Output() selectStation = new EventEmitter<any>()
   constructor() { }
 
@@ -18,5 +19,13 @@ export class StationMenuComponent implements OnInit {
   onSelectStation(station): void {
     this.selectStation.emit(station)
     this.selectedStation=station
+  }
+
+  hoverOn (station) {
+    this.hoveringStation.emit(station);
+  }
+
+  hoverOff ()  {
+    this.hoveringStation.emit('');
   }
 }
