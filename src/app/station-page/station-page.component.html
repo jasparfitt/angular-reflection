@@ -1,8 +1,8 @@
 <div class='station-page two-menu-page page'>
-  <app-station-menu [selectedStation]='selectedStation' [stations]='stations' (selectStation)='onSelectStation($event)' [line]='selectedLine' class='side-l'></app-station-menu>
+  <app-station-menu (hoveringStation)='onHover($event)' [selectedStation]='selectedStation' [stations]='stations' (selectStation)='onSelectStation($event)' [line]='selectedLine' class='side-l'></app-station-menu>
   <app-side-menu [selectedLine]='selectedLine' (selectLine)='onSelectLine($event)' class='side-r'></app-side-menu>
   <div class='main'>
-    <app-line-details class='map' (selectStation)='onSelectStation($event)' [line]="selectedLine" [disruptions]="disruptions"></app-line-details>
+    <app-line-details class='map' [hoverStation]='hoverStation' (selectStation)='onSelectStation($event)' [selectedStation]='selectedStationCode' [line]="selectedLine" [disruptions]="disruptions"></app-line-details>
     <app-arrivals class='arrivals' [line]='selectedLine' [arrivals]='arrivals'></app-arrivals>
     <app-timetable class='timetable' [line]='selectedLine' [timetable]='timetable' [station]='selectedStation'></app-timetable>
   </div>

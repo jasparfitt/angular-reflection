@@ -12,6 +12,7 @@ export class LineDetailsComponent implements OnInit {
   @Input() line: Line;
   @Input() disruptions: any;
   @Input() hoverStation: any;
+  @Input() selectedStation: any;
   @Output() selectStation = new EventEmitter<any>();
 
   constructor() { }

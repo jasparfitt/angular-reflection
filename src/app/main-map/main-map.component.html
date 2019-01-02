@@ -89,9 +89,9 @@
       </feMerge>
     </filter>
 
-      <filter id="blur" x='-100%' y='-100%' width='300%' height='300%'>
-        <feGaussianBlur stdDeviation="5" edgeMode="none" ></feGaussianBlur>
-      </filter>
+    <filter id="blur" x='-200%' y='-200%' width='500%' height='500%'>
+      <feGaussianBlur stdDeviation="6" edgeMode="none" ></feGaussianBlur>
+    </filter>
 
     <path id="term" class="me" d="M -7.5,0 H 7.5"></path>
     <path id="termb" class="me" style="stroke-width:5.5" d="
@@ -280,307 +280,308 @@
   </defs>
   <g id='station_shadows'>
     <g id='interchange_shadows'>
-      <circle cx='445' cy='778' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Acton Town'}" class='all-hide'/>
-      <circle cx='1601.5' cy='541.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Aldgate'}" class='all-hide'/>
-      <circle cx='1563' cy='585' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Tower Hill'}" class='all-hide'/>
-      <circle cx='1653' cy='556' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Aldgate East'}" class='all-hide'/>
-      <circle cx='1074' cy='169.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Archway'}" class='all-hide'/>
-      <circle cx='1038.5' cy='519' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Baker Street'}" class='all-hide'/>
-      <circle cx='1474.5' cy='558' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Bank Monument'}" class='all-hide'/>
-      <circle cx='1386' cy='459.625' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Farringdon'}" class='all-hide'/>
-      <circle cx='1415' cy='493' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Barbican'}" class='all-hide'/>
-      <circle cx='2159.5' cy='357' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Barking'}" class='all-hide'/>
+      <circle cx='445' cy='778' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Acton Town', 'selectedSt': selectedStation === 'Acton Town'}" class='all-hide'/>
+      <circle cx='1601.5' cy='541.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Aldgate', 'selectedSt': selectedStation === 'Aldgate'}" class='all-hide'/>
+      <circle cx='1563' cy='585' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Tower Hill', 'selectedSt': selectedStation === 'Tower Hill'}" class='all-hide'/>
+      <circle cx='1653' cy='556' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Aldgate East', 'selectedSt': selectedStation === 'Aldgate East'}" class='all-hide'/>
+      <circle cx='1074' cy='169.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Archway', 'selectedSt': selectedStation === 'Archway'}" class='all-hide'/>
+      <circle cx='1038.5' cy='519' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Baker Street', 'selectedSt': selectedStation === 'Baker Street'}" class='all-hide'/>
+      <circle cx='1474.5' cy='558' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Bank', 'selectedSt': selectedStation === 'Bank'}" class='all-hide'/>
+      <circle cx='1474.5' cy='558' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Monument', 'selectedSt': selectedStation === 'Monument'}" class='all-hide'/>
+      <circle cx='1386' cy='459.625' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Farringdon', 'selectedSt': selectedStation === 'Farringdon'}" class='all-hide'/>
+      <circle cx='1415' cy='493' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Barbican', 'selectedSt': selectedStation === 'Barbican'}" class='all-hide'/>
+      <circle cx='2159.5' cy='357' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Barking', 'selectedSt': selectedStation === 'Barking'}" class='all-hide'/>
 
-      <circle cx='1372' cy='639' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Blackfriars'}" class='all-hide'/>
-      <circle cx='1602' cy='113' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Blackhorse Road'}" class='all-hide'/>
-      <circle cx='1105.75' cy='608.75' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Bond Street'}" class='all-hide'/>
-      <circle cx='1878' cy='434' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Bow Road'}" class='all-hide'/>
-      <circle cx='861' cy='309' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Kilburn'}" class='all-hide'/>
-      <circle cx='1700' cy='675' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Canada Water'}" class='all-hide'/>
-      <circle cx='1893.5' cy='648' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Canary Wharf'}" class='all-hide'/>
-      <circle cx='1165' cy='281' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Camden Town'}" class='all-hide'/>
-      <circle cx='1432' cy='594' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Cannon Street'}" class='all-hide'/>
-      <circle cx='2026' cy='584' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Canning Town'}" class='all-hide'/>
+      <circle cx='1372' cy='639' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Blackfriars', 'selectedSt': selectedStation === 'Blackfriars'}" class='all-hide'/>
+      <circle cx='1602' cy='113' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Blackhorse Road', 'selectedSt': selectedStation === 'Blackhorse Road'}" class='all-hide'/>
+      <circle cx='1105.75' cy='608.75' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Bond Street', 'selectedSt': selectedStation === 'Bond Street'}" class='all-hide'/>
+      <circle cx='1878' cy='434' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Bow Road', 'selectedSt': selectedStation === 'Bow Road'}" class='all-hide'/>
+      <circle cx='861' cy='309' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Kilburn', 'selectedSt': selectedStation === 'Kilburn'}" class='all-hide'/>
+      <circle cx='1700' cy='675' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Canada Water', 'selectedSt': selectedStation === 'Canada Water'}" class='all-hide'/>
+      <circle cx='1893.5' cy='648' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Canary Wharf', 'selectedSt': selectedStation === 'Canary Wharf'}" class='all-hide'/>
+      <circle cx='1165' cy='281' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Camden Town', 'selectedSt': selectedStation === 'Camden Town'}" class='all-hide'/>
+      <circle cx='1432' cy='594' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Cannon Street', 'selectedSt': selectedStation === 'Cannon Street'}" class='all-hide'/>
+      <circle cx='2026' cy='584' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Canning Town', 'selectedSt': selectedStation === 'Canning Town'}" class='all-hide'/>
 
-      <circle cx='1287' cy='671.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Charing Cross'}" class='all-hide'/>
-      <circle cx='1240.5' cy='1240.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Clapham North'}" class='all-hide'/>
-      <circle cx='340' cy='723.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Ealing Broadway'}" class='all-hide'/>
-      <circle cx='405' cy='748' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Ealing Common'}" class='all-hide'/>
-      <circle cx='871' cy='869.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Earls Court'}" class='all-hide'/>
-      <circle cx='970' cy='545.25' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Edgware Road (Bakerloo)'}" class='all-hide'/>
-      <circle cx='981' cy='559' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Edgware Road (Circle)'}" class='all-hide'/>
-      <circle cx='1479' cy='768' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Elephant And Castle'}" class='all-hide'/>
-      <circle cx='1302' cy='691.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Embankment'}" class='all-hide'/>
-      <circle cx='1212' cy='376.85' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Euston'}" class='all-hide'/>
+      <circle cx='1287' cy='671.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Charing Cross', 'selectedSt': selectedStation === 'Charing Cross'}" class='all-hide'/>
+      <circle cx='1240.5' cy='964' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Clapham North', 'selectedSt': selectedStation === 'Clapham North'}" class='all-hide'/>
+      <circle cx='340' cy='723.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Ealing Broadway', 'selectedSt': selectedStation === 'Ealing Broadway'}" class='all-hide'/>
+      <circle cx='405' cy='748' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Ealing Common', 'selectedSt': selectedStation === 'Ealing Common'}" class='all-hide'/>
+      <circle cx='871' cy='869.4' r='12' fill='black' filter=url(#blur) [ngClass]='{"hoveringSt": hoverStation === "Earl&apos;s Court", "selectedSt": selectedStation === "Earl&apos;s Court"}' class='all-hide'/>
+      <circle cx='970' cy='545.25' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Edgware Road (Bakerloo)', 'selectedSt': selectedStation === 'Edgware Road (Bakerloo)'}" class='all-hide'/>
+      <circle cx='981' cy='559' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Edgware Road (Circle Line)', 'selectedSt': selectedStation === 'Edgware Road (Circle Line)'}" class='all-hide'/>
+      <circle cx='1479' cy='768' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Elephant & Castle', 'selectedSt': selectedStation === 'Elephant & Castle'}" class='all-hide'/>
+      <circle cx='1302' cy='691.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Embankment', 'selectedSt': selectedStation === 'Embankment'}" class='all-hide'/>
+      <circle cx='1212' cy='376.85' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Euston', 'selectedSt': selectedStation === 'Euston'}" class='all-hide'/>
 
-      <circle cx='1201.92' cy='403.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Euston Square'}" class='all-hide'/>
-      <circle cx='935' cy='381' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Finchley Road'}" class='all-hide'/>
-      <circle cx='1387.5' cy='183' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Finsbury Park'}" class='all-hide'/>
-      <circle cx='1020.3' cy='869.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Gloucester Road'}" class='all-hide'/>
-      <circle cx='1153' cy='672' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Green Park'}" class='all-hide'/>
-      <circle cx='449' cy='836.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Gunnersbury'}" class='all-hide'/>
-      <circle cx='637' cy='835' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hammersmith (H&C Line)'}" class='all-hide'/>
-      <circle cx='637' cy='869.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hammersmith (Dist&picc Line)'}" class='all-hide'/>
-      <circle cx='372' cy='620.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hanger Lane'}" class='all-hide'/>
-      <circle cx='384' cy='643' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Park Royal'}" class='all-hide'/>
+      <circle cx='1201.92' cy='403.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Euston Square', 'selectedSt': selectedStation === 'Euston Square'}" class='all-hide'/>
+      <circle cx='935' cy='381' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Finchley Road', 'selectedSt': selectedStation === 'Finchley Road'}" class='all-hide'/>
+      <circle cx='1387.5' cy='183' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Finsbury Park', 'selectedSt': selectedStation === 'Finsbury Park'}" class='all-hide'/>
+      <circle cx='1020.3' cy='869.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Gloucester Road', 'selectedSt': selectedStation === 'Gloucester Road'}" class='all-hide'/>
+      <circle cx='1153' cy='672' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Green Park', 'selectedSt': selectedStation === 'Green Park'}" class='all-hide'/>
+      <circle cx='449' cy='836.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Gunnersbury', 'selectedSt': selectedStation === 'Gunnersbury'}" class='all-hide'/>
+      <circle cx='637' cy='835' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hammersmith (H&C Line)', 'selectedSt': selectedStation === 'Hammersmith (H&C Line)'}" class='all-hide'/>
+      <circle cx='637' cy='869.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hammersmith (Dist&Picc Line)', 'selectedSt': selectedStation === 'Hammersmith (Dist&Picc Line)'}" class='all-hide'/>
+      <circle cx='372' cy='620.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hanger Lane', 'selectedSt': selectedStation === 'Hanger Lane'}" class='all-hide'/>
+      <circle cx='384' cy='643' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Park Royal', 'selectedSt': selectedStation === 'Park Royal'}" class='all-hide'/>
 
-      <circle cx='531.5' cy='239' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Harrow and Wealdstone'}" class='all-hide'/>
-      <circle cx='111' cy='984.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Heathrow Terminal 4'}" class='all-hide'/>
-      <circle cx='1420' cy='300' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Highbury and Islington'}" class='all-hide'/>
-      <circle cx='1290' cy='520' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Holborn'}" class='all-hide'/>
-      <circle cx='1200.5' cy='636.25' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Piccadilly Circus'}" class='all-hide'/>
-      <circle cx='142' cy='277.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'West Ruislip'}" class='all-hide'/>
-      <circle cx='116.67' cy='296.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Ickenham'}" class='all-hide'/>
-      <circle cx='1128' cy='210' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Kentish Town'}" class='all-hide'/>
-      <circle cx='531.5' cy='274' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Kenton'}" class='all-hide'/>
-      <circle cx='516.5' cy='294' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Northwick Park'}" class='all-hide'/>
+      <circle cx='531.5' cy='239' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Harrow & Wealdstone', 'selectedSt': selectedStation === 'Harrow & Wealdstone'}" class='all-hide'/>
+      <circle cx='111' cy='984.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Heathrow Terminal 4', 'selectedSt': selectedStation === 'Heathrow Terminal 4'}" class='all-hide'/>
+      <circle cx='1420' cy='300' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Highbury & Islington', 'selectedSt': selectedStation === 'Highbury & Islington'}" class='all-hide'/>
+      <circle cx='1290' cy='520' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Holborn', 'selectedSt': selectedStation === 'Holborn'}" class='all-hide'/>
+      <circle cx='1200.5' cy='636.25' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Piccadilly Circus', 'selectedSt': selectedStation === 'Piccadilly Circus'}" class='all-hide'/>
+      <circle cx='142' cy='277.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'West Ruislip', 'selectedSt': selectedStation === 'West Ruislip'}" class='all-hide'/>
+      <circle cx='116.67' cy='296.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Ickenham', 'selectedSt': selectedStation === 'Ickenham'}" class='all-hide'/>
+      <circle cx='1128' cy='210' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Kentish Town', 'selectedSt': selectedStation === 'Kentish Town'}" class='all-hide'/>
+      <circle cx='531.5' cy='274' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Kenton', 'selectedSt': selectedStation === 'Kenton'}" class='all-hide'/>
+      <circle cx='516.5' cy='294' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Northwick Park', 'selectedSt': selectedStation === 'Northwick Park'}" class='all-hide'/>
 
-      <circle cx='828.5' cy='819' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Kensington Olympia'}" class='all-hide'/>
-      <circle cx='1290' cy='385.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Kings Cross St. Pancras'}" class='all-hide'/>
-      <circle cx='1255.5' cy='595' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Leicester Square'}" class='all-hide'/>
-      <circle cx='1926' cy='148' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Leytonstone'}" class='all-hide'/>
-      <circle cx='1564' cy='500' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Liverpool Street'}" class='all-hide'/>
-      <circle cx='1479' cy='500' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Moorgate'}" class='all-hide'/>
-      <circle cx='1479' cy='675' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'London Bridge'}" class='all-hide'/>
-      <circle cx='1812.5' cy='445' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Mile End'}" class='all-hide'/>
-      <circle cx='877.3' cy='723.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Notting Hill Gate'}" class='all-hide'/>
-      <circle cx='1153' cy='573' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Oxford Circus'}" class='all-hide'/>
+      <circle cx='828.5' cy='819' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Kensington (Olympia)', 'selectedSt': selectedStation === 'Kensington (Olympia)'}" class='all-hide'/>
+      <circle cx='1290' cy='385.5' r='12' fill='black' filter=url(#blur) [ngClass]='{"hoveringSt": hoverStation === "King&apos;s Cross St. Pancras", "selectedSt": selectedStation === "King&apos;s Cross St. Pancras"}' class='all-hide'/>
+      <circle cx='1255.5' cy='595' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Leicester Square', 'selectedSt': selectedStation === 'Leicester Square'}" class='all-hide'/>
+      <circle cx='1926' cy='148' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Leytonstone', 'selectedSt': selectedStation === 'Leytonstone'}" class='all-hide'/>
+      <circle cx='1564' cy='500' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Liverpool Street', 'selectedSt': selectedStation === 'Liverpool Street'}" class='all-hide'/>
+      <circle cx='1479' cy='500' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Moorgate', 'selectedSt': selectedStation === 'Moorgate'}" class='all-hide'/>
+      <circle cx='1479' cy='675' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'London Bridge', 'selectedSt': selectedStation === 'London Bridge'}" class='all-hide'/>
+      <circle cx='1812.5' cy='445' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Mile End', 'selectedSt': selectedStation === 'Mile End'}" class='all-hide'/>
+      <circle cx='877.3' cy='723.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Notting Hill Gate', 'selectedSt': selectedStation === 'Notting Hill Gate'}" class='all-hide'/>
+      <circle cx='1153' cy='573' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Oxford Circus', 'selectedSt': selectedStation === 'Oxford Circus'}" class='all-hide'/>
 
-      <circle cx='921' cy='593' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Paddington surface'}" class='all-hide'/>
-      <circle cx='1020' cy='723.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Paddington deep'}" class='all-hide'/>
-      <circle cx='760.5' cy='514' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Queens Park'}" class='all-hide'/>
-      <circle cx='300' cy='296.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Rayners Lane'}" class='all-hide'/>
-      <circle cx='360.5' cy='903.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Richmond'}" class='all-hide'/>
-      <circle cx='1426.67' cy='113' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Seven Sisters'}" class='all-hide'/>
-      <circle cx='726' cy='723.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Shepherds Bush'}" class='all-hide'/>
-      <circle cx='1284.5' cy='931' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Stockwell'}" class='all-hide'/>
-      <circle cx='1982.375' cy='318.25' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Stratford'}" class='all-hide'/>
-      <circle cx='1020.3' cy='719.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'South Kensington'}" class='all-hide'/>
+      <circle cx='921' cy='573' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Paddington (H&C Line)', 'selectedSt': selectedStation === 'Paddington (H&C Line)'}" class='all-hide'/>
+      <circle cx='933' cy='607.7' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Paddington', 'selectedSt': selectedStation === 'Paddington'}" class='all-hide'/>
+      <circle cx='760.5' cy='514' r='12' fill='black' filter=url(#blur) [ngClass]='{"hoveringSt": hoverStation === "Queen&apos;s Park", "selectedSt": selectedStation === "Queen&apos;s Park"}' class='all-hide'/>
+      <circle cx='300' cy='296.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Rayners Lane', 'selectedSt': selectedStation === 'Rayners Lane'}" class='all-hide'/>
+      <circle cx='360.5' cy='903.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Richmond', 'selectedSt': selectedStation === 'Richmond'}" class='all-hide'/>
+      <circle cx='1426.67' cy='113' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Seven Sisters', 'selectedSt': selectedStation === 'Seven Sisters'}" class='all-hide'/>
+      <circle cx='726' cy='723.9' r='12' fill='black' filter=url(#blur) [ngClass]='{"hoveringSt": hoverStation === "Shepherd&apos;s Bush (Central)", "selectedSt": selectedStation === "Shepherd&apos;s Bush (Central)"}' class='all-hide'/>
+      <circle cx='1284.5' cy='931' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Stockwell', 'selectedSt': selectedStation === 'Stockwell'}" class='all-hide'/>
+      <circle cx='1982.375' cy='318.25' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Stratford', 'selectedSt': selectedStation === 'Stratford'}" class='all-hide'/>
+      <circle cx='1083' cy='854' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'South Kensington', 'selectedSt': selectedStation === 'South Kensington'}" class='all-hide'/>
 
-      <circle cx='1208' cy='531.75' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Tottenham Court Road'}" class='all-hide'/>
-      <circle cx='1159.5' cy='403.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Warren Street'}" class='all-hide'/>
-      <circle cx='1176' cy='786' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Victoria'}" class='all-hide'/>
-      <circle cx='1682' cy='113' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Walthamstow Central'}" class='all-hide'/>
-      <circle cx='1334.36' cy='733.98' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Waterloo'}" class='all-hide'/>
-      <circle cx='606.5' cy='398.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Wembley Central'}" class='all-hide'/>
-      <circle cx='651' cy='294' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Wembley Park'}" class='all-hide'/>
-      <circle cx='828.5' cy='920' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'West Brompton'}" class='all-hide'/>
-      <circle cx='2031' cy='434' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'West Ham'}" class='all-hide'/>
-      <circle cx='912.5' cy='351' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'West Hampstead'}" class='all-hide'/>
+      <circle cx='1208' cy='531.75' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Tottenham Court Road', 'selectedSt': selectedStation === 'Tottenham Court Road'}" class='all-hide'/>
+      <circle cx='1159.5' cy='403.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Warren Street', 'selectedSt': selectedStation === 'Warren Street'}" class='all-hide'/>
+      <circle cx='1176' cy='786' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Victoria', 'selectedSt': selectedStation === 'Victoria'}" class='all-hide'/>
+      <circle cx='1682' cy='113' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Walthamstow Central', 'selectedSt': selectedStation === 'Walthamstow Central'}" class='all-hide'/>
+      <circle cx='1334.36' cy='733.98' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Waterloo', 'selectedSt': selectedStation === 'Waterloo'}" class='all-hide'/>
+      <circle cx='606.5' cy='398.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Wembley Central', 'selectedSt': selectedStation === 'Wembley Central'}" class='all-hide'/>
+      <circle cx='651' cy='294' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Wembley Park', 'selectedSt': selectedStation === 'Wembley Park'}" class='all-hide'/>
+      <circle cx='828.5' cy='920' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'West Brompton', 'selectedSt': selectedStation === 'West Brompton'}" class='all-hide'/>
+      <circle cx='2031' cy='434' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'West Ham', 'selectedSt': selectedStation === 'West Ham'}" class='all-hide'/>
+      <circle cx='912.5' cy='351' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'West Hampstead', 'selectedSt': selectedStation === 'West Hampstead'}" class='all-hide'/>
 
-      <circle cx='1236' cy='741' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Westminster'}" class='all-hide'/>
-      <circle cx='696.5' cy='466' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Willesden Junction'}" class='all-hide'/>
-      <circle cx='1700' cy='532.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Whitechapel'}" class='all-hide'/>
-      <circle cx='624' cy='723.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'White City'}" class='all-hide'/>
-      <circle cx='637' cy='742.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Wood Lane'}" class='all-hide'/>
+      <circle cx='1236' cy='741' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Westminster', 'selectedSt': selectedStation === 'Westminster'}" class='all-hide'/>
+      <circle cx='696.5' cy='466' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Willesden Junction', 'selectedSt': selectedStation === 'Willesden Junction'}" class='all-hide'/>
+      <circle cx='1700' cy='532.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Whitechapel', 'selectedSt': selectedStation === 'Whitechapel'}" class='all-hide'/>
+      <circle cx='624' cy='723.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'White City', 'selectedSt': selectedStation === 'White City'}" class='all-hide'/>
+      <circle cx='637' cy='742.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Wood Lane', 'selectedSt': selectedStation === 'Wood Lane'}" class='all-hide'/>
     </g>
     <g id='Bakerloo_station_shadows'>
-      <circle cx='789' cy='538.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Kilburn Park'}" class='all-hide'/>
-      <circle cx='815' cy='558' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Maida Vale'}" class='all-hide'/>
-      <circle cx='841' cy='577.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Warwick Avenue'}" class='all-hide'/>
-      <circle cx='1001' cy='522' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Marylebone'}" class='all-hide'/>
-      <circle cx='1091' cy='517' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Regents Park'}" class='all-hide'/>
-      <circle cx='1420' cy='768' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Lambeth North'}" class='all-hide'/>
-      <circle cx='547' cy='357' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'South Kenton'}" class='all-hide'/>
-      <circle cx='575' cy='378' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'North Wembley'}" class='all-hide'/>
-      <circle cx='631' cy='420' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Stonebridge Park'}" class='all-hide'/>
-      <circle cx='659' cy='441' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Harlesden'}" class='all-hide'/>
-      <circle cx='725' cy='490.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Kensal Green'}" class='all-hide'/>
+      <circle cx='789' cy='538.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Kilburn Park', 'selectedSt': selectedStation === 'Kilburn Park'}" class='all-hide'/>
+      <circle cx='815' cy='558' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Maida Vale', 'selectedSt': selectedStation === 'Maida Vale'}" class='all-hide'/>
+      <circle cx='841' cy='577.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Warwick Avenue', 'selectedSt': selectedStation === 'Warwick Avenue'}" class='all-hide'/>
+      <circle cx='1001' cy='522' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Marylebone', 'selectedSt': selectedStation === 'Marylebone'}" class='all-hide'/>
+      <circle cx='1091' cy='517' r='12' fill='black' filter=url(#blur) [ngClass]='{"hoveringSt": hoverStation === "Regent&apos;s Park", "selectedSt": selectedStation === "Regent&apos;s Park"}' class='all-hide'/>
+      <circle cx='1420' cy='768' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Lambeth North', 'selectedSt': selectedStation === 'Lambeth North'}" class='all-hide'/>
+      <circle cx='547' cy='357' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'South Kenton', 'selectedSt': selectedStation === 'South Kenton'}" class='all-hide'/>
+      <circle cx='575' cy='378' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'North Wembley', 'selectedSt': selectedStation === 'North Wembley'}" class='all-hide'/>
+      <circle cx='631' cy='420' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Stonebridge Park', 'selectedSt': selectedStation === 'Stonebridge Park'}" class='all-hide'/>
+      <circle cx='659' cy='441' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Harlesden', 'selectedSt': selectedStation === 'Harlesden'}" class='all-hide'/>
+      <circle cx='725' cy='490.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Kensal Green', 'selectedSt': selectedStation === 'Kensal Green'}" class='all-hide'/>
     </g>
     <g id='Central_station_shadows'>
-      <circle cx='142' cy='344' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Ruislip Gardens'}" class='all-hide'/>
-      <circle cx='142' cy='394' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'South Ruislip'}" class='all-hide'/>
-      <circle cx='158' cy='459.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Northolt'}" class='all-hide'/>
-      <circle cx='224' cy='509.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Greenford'}" class='all-hide'/>
-      <circle cx='304' cy='569.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Perivale'}" class='all-hide'/>
-      <circle cx='407' cy='694.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'West Acton'}" class='all-hide'/>
-      <circle cx='483' cy='703.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'North Acton'}" class='all-hide'/>
-      <circle cx='580' cy='723.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'East Acton'}" class='all-hide'/>
-      <circle cx='806' cy='723.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Holland Park'}" class='all-hide'/>
-      <circle cx='930' cy='723.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Queensway'}" class='all-hide'/>
-      <circle cx='996' cy='691' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Lancaster Gate'}" class='all-hide'/>
-      <circle cx='1048' cy='652' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Marble Arch'}" class='all-hide'/>
-      <circle cx='1330' cy='520' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Chancery Lane'}" class='all-hide'/>
-      <circle cx='1410' cy='540' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'St Pauls'}" class='all-hide'/>
-      <circle cx='1660' cy='452' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Bethnal Green'}" class='all-hide'/>
-      <circle cx='1947' cy='214' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Leyton'}" class='all-hide'/>
-      <circle cx='1926' cy='106' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Snaresbrook'}" class='all-hide'/>
-      <circle cx='1926' cy='76' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'South Woodford'}" class='all-hide'/>
-      <circle cx='1928.5' cy='46' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Woodford'}" class='all-hide'/>
-      <circle cx='1926' cy='16' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Buckhurst Hill'}" class='all-hide'/>
-      <circle cx='1926' cy='-14' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Loughton'}" class='all-hide'/>
-      <circle cx='1926' cy='-44' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Debden'}" class='all-hide'/>
-      <circle cx='1926' cy='-74' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Theydon Bois'}" class='all-hide'/>
-      <circle cx='1926' cy='-104' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Epping'}" class='all-hide'/>
-      <circle cx='1956' cy='120' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Wanstead'}" class='all-hide'/>
-      <circle cx='1996' cy='120' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Redbridge'}" class='all-hide'/>
-      <circle cx='2036' cy='120' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Gants Hill'}" class='all-hide'/>
-      <circle cx='2076' cy='120' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Newbury Park'}" class='all-hide'/>
-      <circle cx='2111' cy='90' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Barkingside'}" class='all-hide'/>
-      <circle cx='2111' cy='66' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Fairlop'}" class='all-hide'/>
-      <circle cx='2111' cy='42' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hainault'}" class='all-hide'/>
-      <circle cx='2076' cy='10' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Grange Hill'}" class='all-hide'/>
-      <circle cx='2018.5' cy='10' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Chigwell'}" class='all-hide'/>
-      <circle cx='1961' cy='10' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Roding Valley'}" class='all-hide'/>
+      <circle cx='142' cy='344' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Ruislip Gardens', 'selectedSt': selectedStation === 'Ruislip Gardens'}" class='all-hide'/>
+      <circle cx='142' cy='394' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'South Ruislip', 'selectedSt': selectedStation === 'South Ruislip'}" class='all-hide'/>
+      <circle cx='158' cy='459.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Northolt', 'selectedSt': selectedStation === 'Northolt'}" class='all-hide'/>
+      <circle cx='224' cy='509.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Greenford', 'selectedSt': selectedStation === 'Greenford'}" class='all-hide'/>
+      <circle cx='304' cy='569.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Perivale', 'selectedSt': selectedStation === 'Perivale'}" class='all-hide'/>
+      <circle cx='407' cy='694.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'West Acton', 'selectedSt': selectedStation === 'West Acton'}" class='all-hide'/>
+      <circle cx='483' cy='703.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'North Acton', 'selectedSt': selectedStation === 'North Acton'}" class='all-hide'/>
+      <circle cx='580' cy='723.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'East Acton', 'selectedSt': selectedStation === 'East Acton'}" class='all-hide'/>
+      <circle cx='806' cy='723.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Holland Park', 'selectedSt': selectedStation === 'Holland Park'}" class='all-hide'/>
+      <circle cx='930' cy='723.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Queensway', 'selectedSt': selectedStation === 'Queensway'}" class='all-hide'/>
+      <circle cx='996' cy='691' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Lancaster Gate', 'selectedSt': selectedStation === 'Lancaster Gate'}" class='all-hide'/>
+      <circle cx='1048' cy='652' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Marble Arch', 'selectedSt': selectedStation === 'Marble Arch'}" class='all-hide'/>
+      <circle cx='1330' cy='520' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Chancery Lane', 'selectedSt': selectedStation === 'Chancery Lane'}" class='all-hide'/>
+      <circle cx='1410' cy='540' r='12' fill='black' filter=url(#blur) [ngClass]='{"hoveringSt": hoverStation === "St. Paul&apos;s", "selectedSt": selectedStation === "St. Paul&apos;s"}' class='all-hide'/>
+      <circle cx='1660' cy='452' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Bethnal Green', 'selectedSt': selectedStation === 'Bethnal Green'}" class='all-hide'/>
+      <circle cx='1947' cy='214' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Leyton', 'selectedSt': selectedStation === 'Leyton'}" class='all-hide'/>
+      <circle cx='1926' cy='106' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Snaresbrook', 'selectedSt': selectedStation === 'Snaresbrook'}" class='all-hide'/>
+      <circle cx='1926' cy='76' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'South Woodford', 'selectedSt': selectedStation === 'South Woodford'}" class='all-hide'/>
+      <circle cx='1928.5' cy='46' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Woodford', 'selectedSt': selectedStation === 'Woodford'}" class='all-hide'/>
+      <circle cx='1926' cy='16' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Buckhurst Hill', 'selectedSt': selectedStation === 'Buckhurst Hill'}" class='all-hide'/>
+      <circle cx='1926' cy='-14' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Loughton', 'selectedSt': selectedStation === 'Loughton'}" class='all-hide'/>
+      <circle cx='1926' cy='-44' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Debden', 'selectedSt': selectedStation === 'Debden'}" class='all-hide'/>
+      <circle cx='1926' cy='-74' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Theydon Bois', 'selectedSt': selectedStation === 'Theydon Bois'}" class='all-hide'/>
+      <circle cx='1926' cy='-104' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Epping', 'selectedSt': selectedStation === 'Epping'}" class='all-hide'/>
+      <circle cx='1956' cy='120' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Wanstead', 'selectedSt': selectedStation === 'Wanstead'}" class='all-hide'/>
+      <circle cx='1996' cy='120' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Redbridge', 'selectedSt': selectedStation === 'Redbridge'}" class='all-hide'/>
+      <circle cx='2036' cy='120' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Gants Hill', 'selectedSt': selectedStation === 'Gants Hill'}" class='all-hide'/>
+      <circle cx='2076' cy='120' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Newbury Park', 'selectedSt': selectedStation === 'Newbury Park'}" class='all-hide'/>
+      <circle cx='2111' cy='90' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Barkingside', 'selectedSt': selectedStation === 'Barkingside'}" class='all-hide'/>
+      <circle cx='2111' cy='66' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Fairlop', 'selectedSt': selectedStation === 'Fairlop'}" class='all-hide'/>
+      <circle cx='2111' cy='42' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hainault', 'selectedSt': selectedStation === 'Hainault'}" class='all-hide'/>
+      <circle cx='2076' cy='10' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Grange Hill', 'selectedSt': selectedStation === 'Grange Hill'}" class='all-hide'/>
+      <circle cx='2018.5' cy='10' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Chigwell', 'selectedSt': selectedStation === 'Chigwell'}" class='all-hide'/>
+      <circle cx='1961' cy='10' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Roding Valley', 'selectedSt': selectedStation === 'Roding Valley'}" class='all-hide'/>
     </g>
     <g id='Circle_station_shadows'>
-      <circle cx='890' cy='669' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Bayswater'}" class='all-hide'/>
-      <circle cx='908' cy='808' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'High Street Kensington'}" class='all-hide'/>
-      <circle cx='1136' cy='819' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Sloane Square'}" class='all-hide'/>
-      <circle cx='1210' cy='763.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'St Jamess Park'}" class='all-hide'/>
-      <circle cx='1336' cy='663' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Temple'}" class='all-hide'/>
-      <circle cx='1400' cy='615' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Mansion House'}" class='all-hide'/>
-      <circle cx='1111' cy='461.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Great Portland Street'}" class='all-hide'/>
-      <circle cx='800' cy='620' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Royal Oak'}" class='all-hide'/>
-      <circle cx='722.5' cy='641' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Westbourne Park'}" class='all-hide'/>
-      <circle cx='689.5' cy='672' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Ladbroke Grove'}" class='all-hide'/>
-      <circle cx='652.5' cy='693.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Latimer Road'}" class='all-hide'/>
-      <circle cx='639.5' cy='772.9' r='8' fill='black' filter=url(#blur) [ngClass]='{hoveringSt: hoverStation === "Shepherd&apos;s Bush Market"}' class='all-hide'/>
-      <circle cx='639.5' cy='802.9' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Goldhawk Road'}" class='all-hide'/>
+      <circle cx='890' cy='669' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Bayswater', 'selectedSt': selectedStation === 'Bayswater'}" class='all-hide'/>
+      <circle cx='908' cy='808' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'High Street Kensington', 'selectedSt': selectedStation === 'High Street Kensington'}" class='all-hide'/>
+      <circle cx='1136' cy='819' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Sloane Square', 'selectedSt': selectedStation === 'Sloane Square'}" class='all-hide'/>
+      <circle cx='1210' cy='763.5' r='12' fill='black' filter=url(#blur) [ngClass]='{"hoveringSt": hoverStation === "St. James&apos;s Park", "selectedSt": selectedStation === "St. James&apos;s Park"}' class='all-hide'/>
+      <circle cx='1336' cy='663' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Temple', 'selectedSt': selectedStation === 'Temple'}" class='all-hide'/>
+      <circle cx='1400' cy='615' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Mansion House', 'selectedSt': selectedStation === 'Mansion House'}" class='all-hide'/>
+      <circle cx='1111' cy='461.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Great Portland Street', 'selectedSt': selectedStation === 'Great Portland Street'}" class='all-hide'/>
+      <circle cx='800' cy='620' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Royal Oak', 'selectedSt': selectedStation === 'Royal Oak'}" class='all-hide'/>
+      <circle cx='722.5' cy='641' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Westbourne Park', 'selectedSt': selectedStation === 'Westbourne Park'}" class='all-hide'/>
+      <circle cx='689.5' cy='672' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Ladbroke Grove', 'selectedSt': selectedStation === 'Ladbroke Grove'}" class='all-hide'/>
+      <circle cx='652.5' cy='693.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Latimer Road', 'selectedSt': selectedStation === 'Latimer Road'}" class='all-hide'/>
+      <circle cx='639.5' cy='772.9' r='12' fill='black' filter=url(#blur) [ngClass]='{"hoveringSt": hoverStation === "Shepherd&apos;s Bush Market", "selectedSt": selectedStation === "Shepherd&apos;s Bush Market"}' class='all-hide'/>
+      <circle cx='639.5' cy='802.9' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Goldhawk Road', 'selectedSt': selectedStation === 'Goldhawk Road'}" class='all-hide'/>
     </g>
     <g id='District_station_shadows'>
-      <circle cx='475' cy='800.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Chiswick Park'}" class='all-hide'/>
-      <circle cx='521' cy='835' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Turnham Green'}" class='all-hide'/>
-      <circle cx='545' cy='853' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Stamford Brook'}" class='all-hide'/>
-      <circle cx='587' cy='869.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Ravenscourt Park'}" class='all-hide'/>
-      <circle cx='705' cy='869.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Barons Court'}" class='all-hide'/>
-      <circle cx='780' cy='869.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'West Kensington'}" class='all-hide'/>
-      <circle cx='1755.5' cy='494' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Stepney Green'}" class='all-hide'/>
-      <circle cx='1963' cy='436.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Bromley-by-Bow'}" class='all-hide'/>
-      <circle cx='2071' cy='426.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Plaistow'}" class='all-hide'/>
-      <circle cx='2101' cy='404' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Upton Park'}" class='all-hide'/>
-      <circle cx='2131' cy='381.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'East Ham'}" class='all-hide'/>
-      <circle cx='2191' cy='336.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Upney'}" class='all-hide'/>
-      <circle cx='2221' cy='314' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Becontree'}" class='all-hide'/>
-      <circle cx='2251' cy='291.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Dagenham Heathway'}" class='all-hide'/>
-      <circle cx='2281' cy='269' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Dagenham East'}" class='all-hide'/>
-      <circle cx='2311' cy='246.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Elm Park'}" class='all-hide'/>
-      <circle cx='2341' cy='224' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hornchurch'}" class='all-hide'/>
-      <circle cx='2371' cy='201.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Upminster Bridge'}" class='all-hide'/>
-      <circle cx='2401' cy='179' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Upminster'}" class='all-hide'/>
-      <circle cx='831' cy='960' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Fulham Broadway'}" class='all-hide'/>
-      <circle cx='840' cy='987.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Parsons Green'}" class='all-hide'/>
-      <circle cx='861' cy='1015.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Putney Bridge'}" class='all-hide'/>
-      <circle cx='882' cy='1043.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'East Putney'}" class='all-hide'/>
-      <circle cx='900' cy='1067.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Southfields'}" class='all-hide'/>
-      <circle cx='918' cy='1091.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Wimbledon Park'}" class='all-hide'/>
-      <circle cx='939' cy='1119.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Wimbledon'}" class='all-hide'/>
+      <circle cx='401' cy='875.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Kew Gardens', 'selectedSt': selectedStation === 'Kew Gardens'}" class='all-hide'/>
+      <circle cx='475' cy='800.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Chiswick Park', 'selectedSt': selectedStation === 'Chiswick Park'}" class='all-hide'/>
+      <circle cx='521' cy='835' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Turnham Green District', 'selectedSt': selectedStation === 'Turnham Green District'}" class='all-hide'/>
+      <circle cx='545' cy='853' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Stamford Brook', 'selectedSt': selectedStation === 'Stamford Brook'}" class='all-hide'/>
+      <circle cx='587' cy='869.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Ravenscourt Park', 'selectedSt': selectedStation === 'Ravenscourt Park'}" class='all-hide'/>
+      <circle cx='705' cy='869.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Barons Court District', 'selectedSt': selectedStation === 'Barons Court District'}" class='all-hide'/>
+      <circle cx='780' cy='869.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'West Kensington', 'selectedSt': selectedStation === 'West Kensington'}" class='all-hide'/>
+      <circle cx='1755.5' cy='494' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Stepney Green', 'selectedSt': selectedStation === 'Stepney Green'}" class='all-hide'/>
+      <circle cx='1963' cy='436.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Bromley-by-Bow', 'selectedSt': selectedStation === 'Bromley-by-Bow'}" class='all-hide'/>
+      <circle cx='2071' cy='426.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Plaistow', 'selectedSt': selectedStation === 'Plaistow'}" class='all-hide'/>
+      <circle cx='2101' cy='404' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Upton Park', 'selectedSt': selectedStation === 'Upton Park'}" class='all-hide'/>
+      <circle cx='2131' cy='381.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'East Ham', 'selectedSt': selectedStation === 'East Ham'}" class='all-hide'/>
+      <circle cx='2191' cy='336.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Upney', 'selectedSt': selectedStation === 'Upney'}" class='all-hide'/>
+      <circle cx='2221' cy='314' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Becontree', 'selectedSt': selectedStation === 'Becontree'}" class='all-hide'/>
+      <circle cx='2251' cy='291.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Dagenham Heathway', 'selectedSt': selectedStation === 'Dagenham Heathway'}" class='all-hide'/>
+      <circle cx='2281' cy='269' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Dagenham East', 'selectedSt': selectedStation === 'Dagenham East'}" class='all-hide'/>
+      <circle cx='2311' cy='246.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Elm Park', 'selectedSt': selectedStation === 'Elm Park'}" class='all-hide'/>
+      <circle cx='2341' cy='224' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hornchurch', 'selectedSt': selectedStation === 'Hornchurch'}" class='all-hide'/>
+      <circle cx='2371' cy='201.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Upminster Bridge', 'selectedSt': selectedStation === 'Upminster Bridge'}" class='all-hide'/>
+      <circle cx='2401' cy='179' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Upminster', 'selectedSt': selectedStation === 'Upminster'}" class='all-hide'/>
+      <circle cx='831' cy='960' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Fulham Broadway', 'selectedSt': selectedStation === 'Fulham Broadway'}" class='all-hide'/>
+      <circle cx='840' cy='987.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Parsons Green', 'selectedSt': selectedStation === 'Parsons Green'}" class='all-hide'/>
+      <circle cx='861' cy='1015.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Putney Bridge', 'selectedSt': selectedStation === 'Putney Bridge'}" class='all-hide'/>
+      <circle cx='882' cy='1043.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'East Putney', 'selectedSt': selectedStation === 'East Putney'}" class='all-hide'/>
+      <circle cx='900' cy='1067.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Southfields', 'selectedSt': selectedStation === 'Southfields'}" class='all-hide'/>
+      <circle cx='918' cy='1091.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Wimbledon Park', 'selectedSt': selectedStation === 'Wimbledon Park'}" class='all-hide'/>
+      <circle cx='939' cy='1119.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Wimbledon', 'selectedSt': selectedStation === 'Wimbledon'}" class='all-hide'/>
     </g>
     <g id='Jubilee_station_shadows'>
-      <circle cx='651' cy='162' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Stanmore'}" class='all-hide'/>
-      <circle cx='651' cy='192' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Canons Park'}" class='all-hide'/>
-      <circle cx='651' cy='222' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Queensbury'}" class='all-hide'/>
-      <circle cx='651' cy='252' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Kingsbury'}" class='all-hide'/>
-      <circle cx='681' cy='309' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Neasden'}" class='all-hide'/>
-      <circle cx='741' cy='309' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Dollis Hill'}" class='all-hide'/>
-      <circle cx='801' cy='309' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Willesden Green'}" class='all-hide'/>
-      <circle cx='957' cy='411' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Swiss Cottage'}" class='all-hide'/>
-      <circle cx='995' cy='461' r='8' fill='black' filter=url(#blur) [ngClass]='{hoveringSt: hoverStation === "St. John&apos;s Wood"}' class='all-hide'/>
-      <circle cx='1380.2' cy='699.6' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Southwark'}" class='all-hide'/>
-      <circle cx='1590' cy='675' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Bermondsey'}" class='all-hide'/>
-      <circle cx='2000' cy='648' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'North Greenwich'}" class='all-hide'/>
+      <circle cx='651' cy='162' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Stanmore', 'selectedSt': selectedStation === 'Stanmore'}" class='all-hide'/>
+      <circle cx='651' cy='192' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Canons Park', 'selectedSt': selectedStation === 'Canons Park'}" class='all-hide'/>
+      <circle cx='651' cy='222' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Queensbury', 'selectedSt': selectedStation === 'Queensbury'}" class='all-hide'/>
+      <circle cx='651' cy='252' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Kingsbury', 'selectedSt': selectedStation === 'Kingsbury'}" class='all-hide'/>
+      <circle cx='681' cy='309' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Neasden', 'selectedSt': selectedStation === 'Neasden'}" class='all-hide'/>
+      <circle cx='741' cy='309' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Dollis Hill', 'selectedSt': selectedStation === 'Dollis Hill'}" class='all-hide'/>
+      <circle cx='801' cy='309' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Willesden Green', 'selectedSt': selectedStation === 'Willesden Green'}" class='all-hide'/>
+      <circle cx='957' cy='411' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Swiss Cottage', 'selectedSt': selectedStation === 'Swiss Cottage'}" class='all-hide'/>
+      <circle cx='995' cy='461' r='12' fill='black' filter=url(#blur) [ngClass]='{"hoveringSt": hoverStation === "St. John&apos;s Wood", "selectedSt": selectedStation === "St. John&apos;s Wood"}' class='all-hide'/>
+      <circle cx='1380.2' cy='699.6' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Southwark', 'selectedSt': selectedStation === 'Southwark'}" class='all-hide'/>
+      <circle cx='1590' cy='675' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Bermondsey', 'selectedSt': selectedStation === 'Bermondsey'}" class='all-hide'/>
+      <circle cx='2000' cy='648' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'North Greenwich', 'selectedSt': selectedStation === 'North Greenwich'}" class='all-hide'/>
     </g>
     <g id='metropolitan_station_shadows'>
-      <circle cx='100' cy='60' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Amersham'}" class='all-hide'/>
-      <circle cx='124' cy='38' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Chesham'}" class='all-hide'/>
-      <circle cx='140' cy='90' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Chalfont and Latimer'}" class='all-hide'/>
-      <circle cx='170' cy='112.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Chorleywood'}" class='all-hide'/>
-      <circle cx='200' cy='135' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Rickmansworth'}" class='all-hide'/>
-      <circle cx='223' cy='80' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Watford'}" class='all-hide'/>
-      <circle cx='223' cy='130' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Croxley'}" class='all-hide'/>
-      <circle cx='240' cy='165' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Moor Park'}" class='all-hide'/>
-      <circle cx='270' cy='187.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Northwood'}" class='all-hide'/>
-      <circle cx='300' cy='210' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Northwood Hills'}" class='all-hide'/>
-      <circle cx='330' cy='232.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Pinner'}" class='all-hide'/>
-      <circle cx='360' cy='255' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'North Harrow'}" class='all-hide'/>
-      <circle cx='380' cy='294' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'West Harrow'}" class='all-hide'/>
-      <circle cx='440' cy='294' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Harrow on the Hill'}" class='all-hide'/>
-      <circle cx='590' cy='294' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Preston Road'}" class='all-hide'/>
+      <circle cx='100' cy='60' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Amersham', 'selectedSt': selectedStation === 'Amersham'}" class='all-hide'/>
+      <circle cx='124' cy='38' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Chesham', 'selectedSt': selectedStation === 'Chesham'}" class='all-hide'/>
+      <circle cx='140' cy='90' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Chalfont & Latimer', 'selectedSt': selectedStation === 'Chalfont & Latimer'}" class='all-hide'/>
+      <circle cx='170' cy='112.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Chorleywood', 'selectedSt': selectedStation === 'Chorleywood'}" class='all-hide'/>
+      <circle cx='200' cy='135' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Rickmansworth', 'selectedSt': selectedStation === 'Rickmansworth'}" class='all-hide'/>
+      <circle cx='223' cy='80' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Watford', 'selectedSt': selectedStation === 'Watford'}" class='all-hide'/>
+      <circle cx='223' cy='130' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Croxley', 'selectedSt': selectedStation === 'Croxley'}" class='all-hide'/>
+      <circle cx='240' cy='165' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Moor Park', 'selectedSt': selectedStation === 'Moor Park'}" class='all-hide'/>
+      <circle cx='270' cy='187.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Northwood', 'selectedSt': selectedStation === 'Northwood'}" class='all-hide'/>
+      <circle cx='300' cy='210' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Northwood Hills', 'selectedSt': selectedStation === 'Northwood Hills'}" class='all-hide'/>
+      <circle cx='330' cy='232.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Pinner', 'selectedSt': selectedStation === 'Pinner'}" class='all-hide'/>
+      <circle cx='360' cy='255' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'North Harrow', 'selectedSt': selectedStation === 'North Harrow'}" class='all-hide'/>
+      <circle cx='380' cy='294' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'West Harrow', 'selectedSt': selectedStation === 'West Harrow'}" class='all-hide'/>
+      <circle cx='440' cy='294' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Harrow-on-the-Hill', 'selectedSt': selectedStation === 'Harrow-on-the-Hill'}" class='all-hide'/>
+      <circle cx='590' cy='294' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Preston Road', 'selectedSt': selectedStation === 'Preston Road'}" class='all-hide'/>
     </g>
     <g id='northern_station_shadows'>
-      <circle cx='706' cy='124.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Edgware'}" class='all-hide'/>
-      <circle cx='738' cy='148.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Burnt Oak'}" class='all-hide'/>
-      <circle cx='768' cy='171' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Colindale'}" class='all-hide'/>
-      <circle cx='798' cy='193.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hendon Central'}" class='all-hide'/>
-      <circle cx='828' cy='216' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Brent Cross'}" class='all-hide'/>
-      <circle cx='858' cy='238.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Golders Green'}" class='all-hide'/>
-      <circle cx='888' cy='261' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hampstead'}" class='all-hide'/>
-      <circle cx='1010' cy='281' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Belsize Park'}" class='all-hide'/>
-      <circle cx='1090' cy='281' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Chalk Farm'}" class='all-hide'/>
-      <circle cx='913' cy='90' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Mill Hill East'}" class='all-hide'/>
-      <circle cx='854' cy='4.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'High Barnet'}" class='all-hide'/>
-      <circle cx='884' cy='27' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Totteridge And Whetstone'}" class='all-hide'/>
-      <circle cx='914' cy='49.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Woodside Park'}" class='all-hide'/>
-      <circle cx='944' cy='72' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'West Finchley'}" class='all-hide'/>
-      <circle cx='984' cy='102' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Finchley Central'}" class='all-hide'/>
-      <circle cx='1014' cy='124.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'East Finchley'}" class='all-hide'/>
-      <circle cx='1044' cy='147' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Highgate'}" class='all-hide'/>
-      <circle cx='1108' cy='195' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Tufnell Park'}" class='all-hide'/>
-      <circle cx='1202' cy='332' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Mornington Crescent'}" class='all-hide'/>
-      <circle cx='1163' cy='450' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Goodge Street'}" class='all-hide'/>
-      <circle cx='1419.8' cy='385' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Angel'}" class='all-hide'/>
-      <circle cx='1467' cy='424' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Old Street'}" class='all-hide'/>
-      <circle cx='1479' cy='730' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Borough'}" class='all-hide'/>
-      <circle cx='1384.5' cy='856' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Kennington'}" class='all-hide'/>
-      <circle cx='1336.5' cy='892' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Oval'}" class='all-hide'/>
-      <circle cx='1210' cy='986.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Clapham Common'}" class='all-hide'/>
-      <circle cx='1180.5' cy='1009' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Clapham South'}" class='all-hide'/>
-      <circle cx='1150.5' cy='1031.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Balham'}" class='all-hide'/>
-      <circle cx='1120.5' cy='1054' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Tooting Bec'}" class='all-hide'/>
-      <circle cx='1090.5' cy='1076.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Tooting Broadway'}" class='all-hide'/>
-      <circle cx='1060.5' cy='1099' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Colliers Wood'}" class='all-hide'/>
-      <circle cx='1030.5' cy='1121.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'South Wimbledon'}" class='all-hide'/>
-      <circle cx='1000.5' cy='1144' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Morden'}" class='all-hide'/>
+      <circle cx='706' cy='124.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Edgware', 'selectedSt': selectedStation === 'Edgware'}" class='all-hide'/>
+      <circle cx='738' cy='148.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Burnt Oak', 'selectedSt': selectedStation === 'Burnt Oak'}" class='all-hide'/>
+      <circle cx='768' cy='171' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Colindale', 'selectedSt': selectedStation === 'Colindale'}" class='all-hide'/>
+      <circle cx='798' cy='193.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hendon Central', 'selectedSt': selectedStation === 'Hendon Central'}" class='all-hide'/>
+      <circle cx='828' cy='216' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Brent Cross', 'selectedSt': selectedStation === 'Brent Cross'}" class='all-hide'/>
+      <circle cx='858' cy='238.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Golders Green', 'selectedSt': selectedStation === 'Golders Green'}" class='all-hide'/>
+      <circle cx='888' cy='261' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hampstead', 'selectedSt': selectedStation === 'Hampstead'}" class='all-hide'/>
+      <circle cx='1010' cy='281' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Belsize Park', 'selectedSt': selectedStation === 'Belsize Park'}" class='all-hide'/>
+      <circle cx='1090' cy='281' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Chalk Farm', 'selectedSt': selectedStation === 'Chalk Farm'}" class='all-hide'/>
+      <circle cx='913' cy='90' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Mill Hill East', 'selectedSt': selectedStation === 'Mill Hill East'}" class='all-hide'/>
+      <circle cx='854' cy='4.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'High Barnet', 'selectedSt': selectedStation === 'High Barnet'}" class='all-hide'/>
+      <circle cx='884' cy='27' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Totteridge & Whetstone', 'selectedSt': selectedStation === 'Totteridge & Whetstone'}" class='all-hide'/>
+      <circle cx='914' cy='49.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Woodside Park', 'selectedSt': selectedStation === 'Woodside Park'}" class='all-hide'/>
+      <circle cx='944' cy='72' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'West Finchley', 'selectedSt': selectedStation === 'West Finchley'}" class='all-hide'/>
+      <circle cx='984' cy='102' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Finchley Central', 'selectedSt': selectedStation === 'Finchley Central'}" class='all-hide'/>
+      <circle cx='1014' cy='124.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'East Finchley', 'selectedSt': selectedStation === 'East Finchley'}" class='all-hide'/>
+      <circle cx='1044' cy='147' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Highgate', 'selectedSt': selectedStation === 'Highgate'}" class='all-hide'/>
+      <circle cx='1108' cy='195' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Tufnell Park', 'selectedSt': selectedStation === 'Tufnell Park'}" class='all-hide'/>
+      <circle cx='1202' cy='332' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Mornington Crescent', 'selectedSt': selectedStation === 'Mornington Crescent'}" class='all-hide'/>
+      <circle cx='1163' cy='450' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Goodge Street', 'selectedSt': selectedStation === 'Goodge Street'}" class='all-hide'/>
+      <circle cx='1419.8' cy='385' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Angel', 'selectedSt': selectedStation === 'Angel'}" class='all-hide'/>
+      <circle cx='1467' cy='424' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Old Street', 'selectedSt': selectedStation === 'Old Street'}" class='all-hide'/>
+      <circle cx='1479' cy='730' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Borough', 'selectedSt': selectedStation === 'Borough'}" class='all-hide'/>
+      <circle cx='1384.5' cy='856' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Kennington', 'selectedSt': selectedStation === 'Kennington'}" class='all-hide'/>
+      <circle cx='1336.5' cy='892' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Oval', 'selectedSt': selectedStation === 'Oval'}" class='all-hide'/>
+      <circle cx='1210' cy='986.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Clapham Common', 'selectedSt': selectedStation === 'Clapham Common'}" class='all-hide'/>
+      <circle cx='1180.5' cy='1009' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Clapham South', 'selectedSt': selectedStation === 'Clapham South'}" class='all-hide'/>
+      <circle cx='1150.5' cy='1031.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Balham', 'selectedSt': selectedStation === 'Balham'}" class='all-hide'/>
+      <circle cx='1120.5' cy='1054' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Tooting Bec', 'selectedSt': selectedStation === 'Tooting Bec'}" class='all-hide'/>
+      <circle cx='1090.5' cy='1076.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Tooting Broadway', 'selectedSt': selectedStation === 'Tooting Broadway'}" class='all-hide'/>
+      <circle cx='1060.5' cy='1099' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Colliers Wood', 'selectedSt': selectedStation === 'Colliers Wood'}" class='all-hide'/>
+      <circle cx='1030.5' cy='1121.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'South Wimbledon', 'selectedSt': selectedStation === 'South Wimbledon'}" class='all-hide'/>
+      <circle cx='1000.5' cy='1144' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Morden', 'selectedSt': selectedStation === 'Morden'}" class='all-hide'/>
     </g>
     <g id='piccadilly_station_shadows'>
-      <circle cx='384' cy='370' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'South Harrow'}" class='all-hide'/>
-      <circle cx='384' cy='430' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Sudbury Hill'}" class='all-hide'/>
-      <circle cx='384' cy='490' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Sudbury Town'}" class='all-hide'/>
-      <circle cx='384' cy='550' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Alperton'}" class='all-hide'/>
-      <circle cx='384' cy='670' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'North Ealing'}" class='all-hide'/>
-      <circle cx='93' cy='956.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Heathrow 23'}" class='all-hide'/>
-      <circle cx='30' cy='956.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Heathrow 5'}" class='all-hide'/>
-      <circle cx='160' cy='947.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hatton Cross'}" class='all-hide'/>
-      <circle cx='190' cy='925' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hounslow West'}" class='all-hide'/>
-      <circle cx='220' cy='902.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hounslow Central'}" class='all-hide'/>
-      <circle cx='250' cy='880' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hounslow East'}" class='all-hide'/>
-      <circle cx='280' cy='857.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Osterley'}" class='all-hide'/>
-      <circle cx='310' cy='835' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Boston Manor'}" class='all-hide'/>
-      <circle cx='340' cy='812.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Northfields'}" class='all-hide'/>
-      <circle cx='370' cy='790' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'South Ealing'}" class='all-hide'/>
-      <circle cx='530' cy='823' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Turnham Green'}" class='all-hide'/>
-      <circle cx='705' cy='854.4' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Barons Court'}" class='all-hide'/>
-      <circle cx='1114.6' cy='766' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Knightsbridge'}" class='all-hide'/>
-      <circle cx='1114.6' cy='726' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hyde Park Corner'}" class='all-hide'/>
-      <circle cx='1282' cy='573.25' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Covent Garden'}" class='all-hide'/>
-      <circle cx='1290' cy='450' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Russell Square'}" class='all-hide'/>
-      <circle cx='1306' cy='260' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Caledonian Road'}" class='all-hide'/>
-      <circle cx='1336' cy='237.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Holloway Road'}" class='all-hide'/>
-      <circle cx='1366' cy='215' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Arsenal'}" class='all-hide'/>
-      <circle cx='1382.5' cy='159' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Manor House'}" class='all-hide'/>
-      <circle cx='1335' cy='74' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Turnpike Lane'}" class='all-hide'/>
-      <circle cx='1305' cy='51.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Wood Green'}" class='all-hide'/>
-      <circle cx='1275' cy='29' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Bounds Green'}" class='all-hide'/>
-      <circle cx='1245' cy='6.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Arnos Grove'}" class='all-hide'/>
-      <circle cx='1215' cy='-16' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Southgate'}" class='all-hide'/>
-      <circle cx='1185' cy='-38.5' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Oakwood'}" class='all-hide'/>
-      <circle cx='1155' cy='-60' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Cockfosters'}" class='all-hide'/>
+      <circle cx='384' cy='370' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'South Harrow', 'selectedSt': selectedStation === 'South Harrow'}" class='all-hide'/>
+      <circle cx='384' cy='430' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Sudbury Hill', 'selectedSt': selectedStation === 'Sudbury Hill'}" class='all-hide'/>
+      <circle cx='384' cy='490' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Sudbury Town', 'selectedSt': selectedStation === 'Sudbury Town'}" class='all-hide'/>
+      <circle cx='384' cy='550' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Alperton', 'selectedSt': selectedStation === 'Alperton'}" class='all-hide'/>
+      <circle cx='384' cy='670' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'North Ealing', 'selectedSt': selectedStation === 'North Ealing'}" class='all-hide'/>
+      <circle cx='93' cy='956.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Heathrow Terminals 2 & 3', 'selectedSt': selectedStation === 'Heathrow Terminals 2 & 3'}" class='all-hide'/>
+      <circle cx='30' cy='956.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Heathrow Terminal 5', 'selectedSt': selectedStation === 'Heathrow Terminal 5'}" class='all-hide'/>
+      <circle cx='160' cy='947.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hatton Cross', 'selectedSt': selectedStation === 'Hatton Cross'}" class='all-hide'/>
+      <circle cx='190' cy='925' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hounslow West', 'selectedSt': selectedStation === 'Hounslow West'}" class='all-hide'/>
+      <circle cx='220' cy='902.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hounslow Central', 'selectedSt': selectedStation === 'Hounslow Central'}" class='all-hide'/>
+      <circle cx='250' cy='880' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hounslow East', 'selectedSt': selectedStation === 'Hounslow East'}" class='all-hide'/>
+      <circle cx='280' cy='857.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Osterley', 'selectedSt': selectedStation === 'Osterley'}" class='all-hide'/>
+      <circle cx='310' cy='835' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Boston Manor', 'selectedSt': selectedStation === 'Boston Manor'}" class='all-hide'/>
+      <circle cx='340' cy='812.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Northfields', 'selectedSt': selectedStation === 'Northfields'}" class='all-hide'/>
+      <circle cx='370' cy='790' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'South Ealing', 'selectedSt': selectedStation === 'South Ealing'}" class='all-hide'/>
+      <circle cx='530' cy='823' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Turnham Green Piccadilly', 'selectedSt': selectedStation === 'Turnham Green Piccadilly'}" class='all-hide'/>
+      <circle cx='705' cy='854.4' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Barons Court Piccadilly', 'selectedSt': selectedStation === 'Barons Court Piccadilly'}" class='all-hide'/>
+      <circle cx='1114.6' cy='766' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Knightsbridge', 'selectedSt': selectedStation === 'Knightsbridge'}" class='all-hide'/>
+      <circle cx='1114.6' cy='726' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hyde Park Corner', 'selectedSt': selectedStation === 'Hyde Park Corner'}" class='all-hide'/>
+      <circle cx='1282' cy='573.25' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Covent Garden', 'selectedSt': selectedStation === 'Covent Garden'}" class='all-hide'/>
+      <circle cx='1290' cy='450' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Russell Square', 'selectedSt': selectedStation === 'Russell Square'}" class='all-hide'/>
+      <circle cx='1306' cy='260' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Caledonian Road', 'selectedSt': selectedStation === 'Caledonian Road'}" class='all-hide'/>
+      <circle cx='1336' cy='237.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Holloway Road', 'selectedSt': selectedStation === 'Holloway Road'}" class='all-hide'/>
+      <circle cx='1366' cy='215' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Arsenal', 'selectedSt': selectedStation === 'Arsenal'}" class='all-hide'/>
+      <circle cx='1382.5' cy='159' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Manor House', 'selectedSt': selectedStation === 'Manor House'}" class='all-hide'/>
+      <circle cx='1335' cy='74' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Turnpike Lane', 'selectedSt': selectedStation === 'Turnpike Lane'}" class='all-hide'/>
+      <circle cx='1305' cy='51.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Wood Green', 'selectedSt': selectedStation === 'Wood Green'}" class='all-hide'/>
+      <circle cx='1275' cy='29' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Bounds Green', 'selectedSt': selectedStation === 'Bounds Green'}" class='all-hide'/>
+      <circle cx='1245' cy='6.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Arnos Grove', 'selectedSt': selectedStation === 'Arnos Grove'}" class='all-hide'/>
+      <circle cx='1215' cy='-16' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Southgate', 'selectedSt': selectedStation === 'Southgate'}" class='all-hide'/>
+      <circle cx='1185' cy='-38.5' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Oakwood', 'selectedSt': selectedStation === 'Oakwood'}" class='all-hide'/>
+      <circle cx='1155' cy='-60' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Cockfosters', 'selectedSt': selectedStation === 'Cockfosters'}" class='all-hide'/>
     </g>
     <g id='victoria_station_shadows'>
-      <circle cx='1530' cy='113' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Tottenham Hale'}" class='all-hide'/>
-      <circle cx='1206' cy='826' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Pimlico'}" class='all-hide'/>
-      <circle cx='1236' cy='866' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Vauxhall'}" class='all-hide'/>
-      <circle cx='1305' cy='958' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Brixton'}" class='all-hide'/>
+      <circle cx='1530' cy='113' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Tottenham Hale', 'selectedSt': selectedStation === 'Tottenham Hale'}" class='all-hide'/>
+      <circle cx='1206' cy='826' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Pimlico', 'selectedSt': selectedStation === 'Pimlico'}" class='all-hide'/>
+      <circle cx='1236' cy='866' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Vauxhall', 'selectedSt': selectedStation === 'Vauxhall'}" class='all-hide'/>
+      <circle cx='1305' cy='958' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Brixton', 'selectedSt': selectedStation === 'Brixton'}" class='all-hide'/>
     </g>
     <g id='multiple_station_shadows'>
-      <circle cx='20' cy='299' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Uxbridge'}" class='all-hide'/>
-      <circle cx='60' cy='294' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Hillingdon'}" class='all-hide'/>
-      <circle cx='180' cy='299' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Ruislip'}" class='all-hide'/>
-      <circle cx='220' cy='294' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Ruislip Manor'}" class='all-hide'/>
-      <circle cx='260' cy='299' r='8' fill='black' filter=url(#blur) [ngClass]="{hoveringSt: hoverStation === 'Eastcote'}" class='all-hide'/>
+      <circle cx='20' cy='299' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Uxbridge', 'selectedSt': selectedStation === 'Uxbridge'}" class='all-hide'/>
+      <circle cx='60' cy='294' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Hillingdon', 'selectedSt': selectedStation === 'Hillingdon'}" class='all-hide'/>
+      <circle cx='180' cy='299' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Ruislip', 'selectedSt': selectedStation === 'Ruislip'}" class='all-hide'/>
+      <circle cx='220' cy='294' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Ruislip Manor', 'selectedSt': selectedStation === 'Ruislip Manor'}" class='all-hide'/>
+      <circle cx='260' cy='299' r='12' fill='black' filter=url(#blur) [ngClass]="{'hoveringSt': hoverStation === 'Eastcote', 'selectedSt': selectedStation === 'Eastcote'}" class='all-hide'/>
     </g>
   </g>
-
 
   <g id="routes" [ngClass]="{pointer: hoverClass !== 'off'}">
     <g [ngClass]="{hovering: hoverClass==='waterloo-city'}" class="me hide swnc waterloo-city" routerLink="/line/waterloo-city" (mouseover)='hoverOn("waterloo-city")' (mouseleave)='hoverOff()'>
@@ -992,7 +993,7 @@
       <g (mouseover)='hoverStationOn("Baker Street")' (mouseleave)='hoverStationOff()'>
         <use class='jubilee bakerloo metropolitan circle hammersmith-city hide' xlink:href="#cap2" transform="translate(1038.5,519)rotate(-36.87)" id="Baker_Street"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Bank Monument")' (mouseleave)='hoverStationOff()' class=' waterloo-city central circle district northern hide' transform="translate(1474.5,558)" cursor="help">
+      <g (mouseover)='hoverStationOn("Bank")' (mouseleave)='hoverStationOff()' class=' waterloo-city central circle district northern hide' transform="translate(1474.5,558)" cursor="help">
         <g id="Bank_Monument_hub">
           <title>Free out-of-station interchange between all Bank-Monument gatelines within 15 minutes.</title>
           <path d="M 0,0 l 20.25,27" style="stroke:#fff;stroke-width:7.5"></path>
@@ -1063,16 +1064,16 @@
       <g (mouseover)='hoverStationOn("Ealing Common")' (mouseleave)='hoverStationOff()'>
         <use class='piccadilly district hide' xlink:href="#cap2" transform="translate(405,748)rotate(-53.13)" id="Ealing_Common"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Earls Court")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Earl&apos;s Court")' (mouseleave)='hoverStationOff()'>
         <use class='piccadilly district hide' xlink:href="#cap2" transform="translate(871,869.4)rotate(-90)" id="Earls_Court"></use>
       </g>
       <g (mouseover)='hoverStationOn("Edgware Road (Bakerloo)")' (mouseleave)='hoverStationOff()'>
         <use class='bakerloo hide' xlink:href="#int" x="970" y="545.25" id="Edgware_Road_bakerloo"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Edgware Road (Circle)")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Edgware Road (Circle Line)")' (mouseleave)='hoverStationOff()'>
         <use class='district circle hammersmith-city hide' xlink:href="#cap2" transform="translate(981,559)rotate(53.13)" id="Edgware_Road_circle"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Elephant And Castle")' (mouseleave)='hoverStationOff()' class='northern bakerloo hide'>
+      <g (mouseover)='hoverStationOn("Elephant & Castle")' (mouseleave)='hoverStationOff()' class='northern bakerloo hide'>
         <use xlink:href="#intnr" x="1479" y="768" id="Elephant_And_Castle"></use>
       </g>
       <g (mouseover)='hoverStationOn("Embankment")' (mouseleave)='hoverStationOff()'>
@@ -1115,13 +1116,13 @@
       </g>
 
 <!--  -->
-      <g (mouseover)='hoverStationOn("Harrow and Wealdstone")' (mouseleave)='hoverStationOff()' class='bakerloo hide'>
+      <g (mouseover)='hoverStationOn("Harrow & Wealdstone")' (mouseleave)='hoverStationOff()' class='bakerloo hide'>
         <use xlink:href="#intnr" x="531.5" y="239" id="Harrow_and_Wealdstone"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Heathrow Terminal 4")' (mouseleave)='hoverStationOff()' cursor="help" class='picadilly hide'>
+      <g (mouseover)='hoverStationOn("Heathrow Terminal 4")' (mouseleave)='hoverStationOff()' cursor="help" class='piccadilly hide'>
         <use xlink:href="#stpiccadilly" transform="translate(111,984.5)rotate(53.33)" id="Heathrow_4_piccadilly"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Highbury and Islington")' (mouseleave)='hoverStationOff()' class='victoria hide'>
+      <g (mouseover)='hoverStationOn("Highbury & Islington")' (mouseleave)='hoverStationOff()' class='victoria hide'>
         <use xlink:href="#intnr" x="1420" y="300" id="Highbury_and_Islington"></use>
       </g>
       <g (mouseover)='hoverStationOn("Holborn")' (mouseleave)='hoverStationOff()'>
@@ -1147,10 +1148,10 @@
       </g>
 
 <!--  -->
-      <g (mouseover)='hoverStationOn("Kensington Olympia")' (mouseleave)='hoverStationOff()' class='district hide'>
+      <g (mouseover)='hoverStationOn("Kensington (Olympia)")' (mouseleave)='hoverStationOff()' class='district hide'>
         <use xlink:href="#intnr" x="828.5" y="819" id="Kensington_Olympia"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Kings Cross St. Pancras")' (mouseleave)='hoverStationOff()' class='victoria piccadilly northern circle hammersmith-city metropolitan hide'>
+      <g (mouseover)='hoverStationOn("King&apos;s Cross St. Pancras")' (mouseleave)='hoverStationOff()' class='victoria piccadilly northern circle hammersmith-city metropolitan hide'>
         <use xlink:href="#cap3nr" transform="translate(1290,397)rotate(-90)" id="Kings_Cross_St_Pancras"></use>
         <use xlink:href="#nr" x="1290" y="385.5"></use>
       </g>
@@ -1181,13 +1182,13 @@
       </g>
 
 <!--  -->
-      <g (mouseover)='hoverStationOn("Paddington surface")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Paddington (H&C Line)")' (mouseleave)='hoverStationOff()'>
         <use class='circle hammersmith-city hide' xlink:href="#int" transform="translate(921,593)rotate(-90)translate(19)" id="Paddington_surface"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Paddington deep")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Paddington")' (mouseleave)='hoverStationOff()'>
         <use class='circle district bakerloo hide' xlink:href="#int" transform="translate(1020.3,723.9)rotate(233)translate(145.5)" id="Paddington_deep"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Queens Park")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Queen&apos;s Park")' (mouseleave)='hoverStationOff()'>
         <use class='bakerloo hide' xlink:href="#int" x="760.5" y="514" id="Queens_Park"></use>
       </g>
       <g (mouseover)='hoverStationOn("Rayners Lane")' (mouseleave)='hoverStationOff()'>
@@ -1200,7 +1201,7 @@
       <g (mouseover)='hoverStationOn("Seven Sisters")' (mouseleave)='hoverStationOff()'>
         <use class='victoria hide' xlink:href="#intnr" x="1426.67" y="113" id="Seven_Sisters"><title>Free out-of-station interchange between all Seven Sisters railway station gatelines within 20 minutes because accessible routes require leaving and re-entering the paid area.</title></use>
       </g>
-      <g (mouseover)='hoverStationOn("Shepherds Bush")' (mouseleave)='hoverStationOff()' class='central hide'>
+      <g (mouseover)='hoverStationOn("Shepherd&apos;s Bush (Central)")' (mouseleave)='hoverStationOff()' class='central hide'>
         <title>Free out-of-station interchange to/from Shepherd's Bush National Rail station within 20 minutes. 0.1-mile walking distance.</title>
         <use xlink:href="#intnr" x="726" y="723.9" id="Shepherds_Bush"></use>
       </g>
@@ -1273,9 +1274,6 @@
 
     </g>
 
-
-
-
     <g id="Bakerloo_line_stations" class='bakerloo hide'>
       <g (mouseover)='hoverStationOn("Kilburn Park")' (mouseleave)='hoverStationOff()'>
         <use href="#stbakerloo" transform="translate(789,538.5)rotate(126.87)" id="Kilburn_Park"></use>
@@ -1290,7 +1288,7 @@
         <title>Free out-of-station interchange to Marylebone National Rail station within 40 minutes, 20 minutes for the opposite direction.</title>
         <use xlink:href="#intnr" x="1001" y="522" id="Marylebone"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Regents Park")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Regent&apos;s Park")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stbakerloo" transform="translate(1091,517)rotate(-90)" id="Regents_Park"></use>
       </g>
       <g (mouseover)='hoverStationOn("Lambeth North")' (mouseleave)='hoverStationOff()'>
@@ -1355,7 +1353,7 @@
       <g (mouseover)='hoverStationOn("Chancery Lane")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stcentral" transform="translate(1330,520)rotate(90)" id="Chancery_Lane"></use>
       </g>
-      <g (mouseover)='hoverStationOn("St Pauls")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("St. Paul&apos;s")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stcentral" transform="translate(1410,540)rotate(143.13)" id="St_Pauls"></use>
       </g>
       <g (mouseover)='hoverStationOn("Bethnal Green")' (mouseleave)='hoverStationOff()'>
@@ -1439,10 +1437,10 @@
       <g (mouseover)='hoverStationOn("Sloane Square")' (mouseleave)='hoverStationOff()'>
         <use class='hide circle' xlink:href="#stcircle" transform="translate(1133,815)rotate(53.13)" id="Sloane_Square_circle"></use>
       </g>
-      <g (mouseover)='hoverStationOn("St Jamess Park")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("St. James&apos;s Park")' (mouseleave)='hoverStationOff()'>
         <use class='hide district' xlink:href="#stdistrict" transform="translate(1210,763.5)rotate(53.13)" id="St_Jamess_Park_district"></use>
       </g>
-      <g (mouseover)='hoverStationOn("St Jamess Park")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("St. James&apos;s Park")' (mouseleave)='hoverStationOff()'>
         <use class='hide circle' xlink:href="#stcircle" transform="translate(1207,759.5)rotate(53.13)" id="St_Jamess_Park_circle"></use>
       </g>
       <g (mouseover)='hoverStationOn("Temple circle")' (mouseleave)='hoverStationOff()'>
@@ -1504,10 +1502,13 @@
       </g>
     </g>
     <g id="District_line_stations" class='district hide'>
+      <g (mouseover)='hoverStationOn("Kew Gardens")' (mouseleave)='hoverStationOff()'>
+        <use xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stdistrict" transform="translate(401,875.4)rotate(53.13)" id="Kew_Gardens_district"/>
+      </g>
       <g (mouseover)='hoverStationOn("Chiswick Park")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stdistrict" transform="translate(475,800.5)rotate(126.87)" id="Chiswick_Park"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Turnham Green")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Turnham Green District")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stdistrict" transform="translate(521,835)rotate(-53.13)" id="Turnham_Green_district"></use>
       </g>
       <g (mouseover)='hoverStationOn("Stamford Brook")' (mouseleave)='hoverStationOff()'>
@@ -1516,7 +1517,7 @@
       <g (mouseover)='hoverStationOn("Ravenscourt Park")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stdistrict" transform="translate(587,869.4)rotate(90)" id="Ravenscourt_Park"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Barons Court")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Barons Court District")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stdistrict" transform="translate(705,869.4)rotate(90)" id="Barons_Court_district"></use>
       </g>
       <g (mouseover)='hoverStationOn("West Kensington")' (mouseleave)='hoverStationOff()'>
@@ -1654,7 +1655,7 @@
       <g (mouseover)='hoverStationOn("Chesham")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#termmetropolitan" x="124" y="38" id="Chesham"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Chalfont and Latimer")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Chalfont & Latimer")' (mouseleave)='hoverStationOff()'>
         <title>Chalfont &amp; Latimer Underground-National Rail station</title>
         <use xlink:href="#intnr" x="140" y="90" id="Chalfont_and_Latimer"></use>
       </g>
@@ -1688,7 +1689,7 @@
       <g (mouseover)='hoverStationOn("West Harrow")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stmetropolitan" transform="translate(380,294)rotate(90)" id="West_Harrow"><title>Free out-of-station interchange between all West Harrow gatelines within 5 minutes.</title></use>
       </g>
-      <g (mouseover)='hoverStationOn("Harrow on the Hill")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Harrow-on-the-Hill")' (mouseleave)='hoverStationOff()'>
         <title>Harrow-on-the-Hill Underground-National Rail station</title>
         <use xlink:href="#intnr" x="440" y="294" id="Harrow_on_the_Hill"></use>
       </g>
@@ -1730,7 +1731,7 @@
       <g (mouseover)='hoverStationOn("High Barnet")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#termnorthern" transform="translate(854,4.5)rotate(-53.13)" id="High_Barnet"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Totteridge And Whetstone")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Totteridge & Whetstone")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stnorthern" transform="translate(884,27)rotate(-53.13)" id="Totteridge_And_Whetstone"></use>
       </g>
       <g (mouseover)='hoverStationOn("Woodside Park")' (mouseleave)='hoverStationOff()'>
@@ -1816,10 +1817,10 @@
       <g (mouseover)='hoverStationOn("North Ealing")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stpiccadilly" transform="translate(384,670)rotate(180)" id="North_Ealing"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Heathrow 23")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Heathrow Terminals 2 & 3")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stpiccadilly" transform="translate(93,956.5)rotate(-90)" id="Heathrow_23"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Heathrow 5")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Heathrow Terminal 5")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#termpiccadilly" transform="translate(30,956.5)rotate(90)" id="Heathrow_5_Piccadilly"></use>
       </g>
       <g (mouseover)='hoverStationOn("Hatton Cross")' (mouseleave)='hoverStationOff()'>
@@ -1846,10 +1847,10 @@
       <g (mouseover)='hoverStationOn("South Ealing")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stpiccadilly" transform="translate(370,790)rotate(233.13)" id="South_Ealing"></use>
       </g>
-      <g (mouseover)='hoverStationOn("Turnham Green")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Turnham Green Piccadilly")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stpiccadillye" transform="translate(530,823)rotate(-53.13)" cursor="help" id="Turnham_Green_piccadilly"><title>Trains of Piccadilly line stop at Turnham Green only during late nights (weekend Night Tube), early mornings (until 06:25am/07:45am Sundays) and evenings (after 10:30pm).</title></use>
       </g>
-      <g (mouseover)='hoverStationOn("Barons Court")' (mouseleave)='hoverStationOff()'>
+      <g (mouseover)='hoverStationOn("Barons Court Piccadilly")' (mouseleave)='hoverStationOff()'>
         <use xlink:href="#stpiccadilly" transform="translate(705,854.4)rotate(90)" id="Barons_Court_piccadilly"></use>
       </g>
       <g (mouseover)='hoverStationOn("Knightsbridge")' (mouseleave)='hoverStationOff()'>
@@ -2109,6 +2110,7 @@
         <text x="2261" y="300">Dagenham Heathway</text>
         <text x="2291" y="277.5">Dagenham East</text>
         <text x="2321" y="255">Elm Park</text>
+        <text xmlns="http://www.w3.org/2000/svg" x="411" y="883.9">Kew Gardens</text>
         <g class="end">
           <text x="2331" y="215.5">Hornchurch</text>
           <text x="2361" y="193">Upminster Bridge</text>

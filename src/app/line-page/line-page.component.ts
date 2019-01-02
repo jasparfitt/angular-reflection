@@ -29,7 +29,13 @@ export class LinePageComponent implements OnInit {
   }
 
   onHover(station) {
-    this.hoverStation = station.substr(0, station.length-20);
+    if (station === 'Paddington (H&C Line)-Underground') {
+      this.hoverStation = station.substr(0, station.length-12);
+    } else if (station === 'Turnham Green Underground Station' || station === 'Barons Court Underground Station') {
+      this.hoverStation = `${station.substr(0, station.length-20)} ${this.selectedLine.name}`
+    } else {
+      this.hoverStation = station.substr(0, station.length-20);
+    }
   }
 
   onSelectLine(line: any) {
@@ -41,12 +47,29 @@ export class LinePageComponent implements OnInit {
 
   getStations(line): void {
     this.apiService.getStationsOnLine(line)
-      .then(stations => this.stations = stations);
+      .then(stations => {
+        if (line === 'metropolitan') {
+          let index = stations.findIndex(station => {
+            return station.commonName === 'Willesden Green Underground Station'
+          })
+          stations.splice(index, 1)
+          this.stations = stations
+        } else {
+          this.stations = stations
+        }
+      })
   }
 
   getDisruptions(line): void {
     this.apiService.getDisruptions(line)
-      .then(disruptions => this.disruptions = disruptions)
+      .then(disruptions => {
+        disruptions = disruptions.filter(function(item, pos, self) {
+        return self.findIndex(element => {
+          return element.description === item.description;
+        }) == pos;
+      })
+        this.disruptions = disruptions
+      })
   }
 
   getLine(line): void {

@@ -8,6 +8,7 @@
     (mouseover)='hoverOn(station.commonName)'
     (mouseleave)="hoverOff()"
   >
-    <div>{{station.commonName.substr(0, station.commonName.length-20)}}</div>
+    <div *ngIf='station.commonName === "Paddington (H&C Line)-Underground" else elseBlock'>{{station.commonName.substr(0, station.commonName.length-12)}}</div>
+    <ng-template #elseBlock>{{station.commonName.substr(0, station.commonName.length-20)}}</ng-template>
   </li>
 </ul>

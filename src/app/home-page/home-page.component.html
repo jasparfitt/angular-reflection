@@ -1,4 +1,4 @@
 <div class='home-page one-menu-page page'>
-  <app-main-map class='main' [line]='selectedLine' [hoverClass]='hoverClass'></app-main-map>
+  <app-main-map class='main' [line]='selectedLine' [hoverClass]='hoverClass' [hoverStation]='"off"'></app-main-map>
   <app-side-menu class='side' [selectedLine]='selectedLine' (hovering)='onHover($event)'></app-side-menu>
 </div>

@@ -8,6 +8,7 @@ export class MainMapComponent implements OnInit{
   @Input() hoverClass: String;
   @Input() line: any;
   @Output() selectStation = new EventEmitter<any>();
+  @Input() selectedStation: any;
   @Input() hoverStation: any;
   constructor() { }
 
